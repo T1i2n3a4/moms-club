@@ -53,9 +53,7 @@ width: 100%;
     letter-spacing: 3px;
     list-style-type: none;
     margin: 20px 30px;
-    
 }
-
 
 .menu a {
     text-decoration: none;
@@ -69,11 +67,50 @@ width: 100%;
     display: flex;
     margin: 30px;
 }
+
 #ethos {
     width: 60%;
+    background-color: #92cc92;
 }
+
+#ethos h2 {
+    text-align: center;
+    padding: 30px;
+}
+.reasons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 30px;
+    list-style-position: inside;
+    
+       
+}
+
+.reasons > li {
+    background-color: #537c53;
+    color: white;
+    margin: 5px;
+    padding:15px;
+}
+
+.reasons ul {
+    list-style: <i class="fa-duotone fa-check"></i>;
+}
+
 
 aside {
     width: 30%;
+    height: fit-content;
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(224, 204, 243);
+    line-height: 30px;
+}
+span {
+    text-transform: uppercase;
 }
 
+.about-us aside {
+    align-content: center;
+}
