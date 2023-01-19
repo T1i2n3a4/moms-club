@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@700&family=Merriweather&display=swap');
 
 * {
     margin: 0;
@@ -6,45 +6,58 @@
     border: none;
 }
 
-
-
 body {
     font-family: Merriweather, Helvetica, sans-serif;
-    font-size: 300;
+    font-size: 20px;
     color: black;
 }
 
 /* headings and logo*/
 
 h1, h2, h3 {
-    font-family: Work Sans, Helvetica, sans-serif;
+    font-family: Caudex, Helvetica, sans-serif;
     letter-spacing: 4px;
     text-transform: uppercase;
+    text-align: center;
 }
 h1 {
     font-size: 300%;
     color: blueviolet;
+    
+
 
 }
     
 
 
 #header-image {
-background: url(../images/lavender_break.jpg);
+background: url(../images/lady-in-lavender-fields.jpg);
 background-repeat: no-repeat;
-height: 400px;
+height: 300px;
 width: 100%;
 }
 
-/* logo */
-
-#logo {
-    float: left;
-    margin: 20px 30px;
-
+.quote {
+    display: flex;
+    height: 300px;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+    font-size: xx-large;
+    line-height: 75px;
+    
+    
+    
 }
 
-/* menu bar */
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    margin: 20px 30px;
+}
 
 .menu {
     display: flex;
@@ -53,12 +66,23 @@ width: 100%;
     letter-spacing: 3px;
     list-style-type: none;
     margin: 20px 30px;
-}
-
+    
+} 
 .menu a {
     text-decoration: none;
     color: black;
+    padding: 0 20px;
 }
+
+.menu a:hover {
+    border-bottom: 1px solid #000;
+    
+}
+.menu li:hover {
+    transform: scale(1.2);
+}
+
+
 
 /* about us page */
 
@@ -71,6 +95,7 @@ width: 100%;
 #ethos {
     width: 60%;
     background-color: #92cc92;
+   
 }
 
 #ethos h2 {
@@ -84,6 +109,8 @@ width: 100%;
     margin: 20px 30px;
     list-style-position: inside;
     
+
+    
        
 }
 
@@ -92,10 +119,7 @@ width: 100%;
     color: white;
     margin: 5px;
     padding:15px;
-}
-
-.reasons ul {
-    list-style: <i class="fa-duotone fa-check"></i>;
+    border-radius: 30px;
 }
 
 
@@ -106,6 +130,7 @@ aside {
     padding: 30px;
     background-color: rgb(224, 204, 243);
     line-height: 30px;
+    border-radius: 30px;
 }
 span {
     text-transform: uppercase;
@@ -113,4 +138,127 @@ span {
 
 .about-us aside {
     align-content: center;
+}
+
+/* Activities page */
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.activities h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.activity-type {
+display: flex;
+
+height: 220px;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 30%;
+    margin: 10px 5px;
+    background-color: rgb(224, 204, 243);
+    line-height: 30px;
+}
+
+.schedule-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.image:hover {
+transform: scale(1.1); 
+}  
+
+.activity-description {
+    width: 60%;
+    margin: 10px 5px;
+    padding: 30px;
+    background-color:#92cc92;
+    line-height: 30px;
+}
+
+.contact-us-box {
+    display: flex;
+    margin: 30px;
+}
+
+.contact-us-page h2 {
+    margin-top: 30px;
+    text-align: center; 
+}
+
+.contact-us h3 {
+    padding: 30px;
+    
+}
+.contact-us {
+    width: 30%;
+    margin: 0 30px 30px 30px;
+    padding: 0 30px 30px 30px;
+
+}
+.map-box {
+    width: 60%;
+}
+
+
+footer {
+height: 50px;
+background: grey;
+width: 100%;
+position: fixed;
+bottom: 0;
+right: 0;
+font-size: x-large;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+span {
+    text-transform:initial;
+    font-size: 20px;
+}
+.social-networks {
+    display: flex;
+    list-style-type: none;   
+}
+
+.social-networks a {
+    color: blueviolet;
+    padding: 30px;
+    
+}
+
+
+
+@media screen and(max-width: 1230px) {
+
+    .logo-nav {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        
+}
+}
+@media screen and(max-width: 1230px) {
+    .activity-type {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
